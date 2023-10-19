@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            /* box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;  ye ek universal selector hai jab niche overwriting nhi karenge to ye 
+             work karga */
+        }
+        
+        body {
+            background-color: #bbd5d5;
+        }
+        
+        .container {
+            background-color: #e7a0a0;
+            border: 2px solid blue;
+            /* we can set marging and padding top ,bottom , left, right together like this */
+            /* padding: 30px; */
+            /* padding-top: 30px;
+            padding-bottom: 30px; 
+            padding-left: 23px; */
+            padding: 23px 7px 46px 24px;
+            /* padding / margin = top right bottom left */
+            /* padding: 23px 60px; */
+            /* top/bottom left/right */
+            margin: 14px 20px;
+            border-radius: 23px;
+            width: 400px;
+            box-sizing: border-box;
+            /* isse width pr furk nhi padega yadi padding ya margin change kr rahe hai tb nhi to width change hoti jayegi.*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eum totam ipsa. Modi impedit, unde saepe illum recusandae quibusdam nam mollitia quas qui?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eum totam ipsa. Modi impedit, unde saepe illum recusandae quibusdam nam mollitia quas qui?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eum totam ipsa. Modi impedit, unde saepe illum recusandae quibusdam nam mollitia quas qui?</p>
+    </div>
+</body>
+
+</html>

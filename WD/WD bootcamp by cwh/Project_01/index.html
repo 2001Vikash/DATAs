@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+        /* CSS Reset */
+        
+        body {
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('IMG/bg.jpg');
+            height: fit-content;
+        }
+        
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        
+        .left img {
+            position: relative;
+            left: 20px;
+            width: 87px;
+            filter: invert(100%);
+        }
+        
+        .left div {
+            line-height: 24px;
+            font-size: 21px;
+            text-align: center;
+        }
+        
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+        
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 8px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+        
+        .btn {
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 8px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: rgb(141, 136, 136);
+        }
+        
+        .container {
+            border: 2px solid white;
+            width: 38%;
+            margin: 120px 62px;
+            padding: 10px 10px;
+            border-radius: 24px;
+        }
+        
+        .container h1 {
+            font-size: 25px;
+        }
+        
+        .form_groups input {
+            font-family: 'Baloo Bhai';
+            text-align: center;
+            display: block;
+            width: 350px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 9px auto;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+        
+        .container h1 {
+            text-align: center;
+        }
+        
+        .container button {
+            display: block;
+            width: 33%;
+            margin: 2px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headri">
+        <div class="left">
+            <!-- Left box for logo -->
+            <img src="IMG/gym.png" alt="">
+            <div>Vikku Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- Mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form_groups">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

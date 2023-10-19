@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JS</title>
+</head>
+
+<body>
+    <h3>Arrays and Objects in JavaScript. and its very <b><i>important</i></b></h3>
+
+    <script>
+        // let primiDataT = 34;
+        // let primiDataT1 = "string";
+        // let primiDataT2 = true;
+        // let primiDataT3 = null;
+        // let primiDataT4 = undefined; for ex int a; or int a=45; 
+        //jb print krenge to defined ho jayega
+        // let primiDataT5 = 34.5;  etc...
+
+        // And primitive ke alwa hum jo bhi variable banate hai use object kahate hai.
+        // means non-primitive me object ,array, aur Regular Expression aata hai
+
+        // Object is like as key value pairs. for ex. name is key and 10 or Harry is value.
+
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+        }
+        console.log(employee);
+        console.log(employee.channel); // or
+        console.log(employee['channel']);
+
+
+
+        // And ARRAY is nothing but it is a special type of object.
+        // DOM--> document object model.
+
+        // let name = [1, 2, 3, "Vikash", 'Vikku', undefined, null];
+        // console.log(name);
+        // console.log(name[3]);
+        // We can also define array like as new object.
+
+        // let name = new Array(31, 2, 3, "Vikash", 'Vikku', undefined, null);
+        // console.log(name.length);
+        // name = name.sort();
+        // name.push("Yadav");// end me add ho jayega.
+        // console.log(name);
+
+        let name = new Array(23);
+        name = name.push("Vikash Yadav", 3);
+        console.log(name);
+    </script>
+</body>
+
+</html>

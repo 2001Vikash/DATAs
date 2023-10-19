@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction</title>
+</head>
+
+<body>
+    <h1>Interaction with website with the help of Alert, prompt , confirm</h1>
+
+    <script>
+        // Alert in in-browser js --> Does not return anything. means undefined.
+        // we can say it is pop type of message if we want to access the page 
+        // then we need to click on (okk) pop message. it is type of function
+        //alert("This is message");
+
+        // Prompt.
+
+        // let name = prompt("What is your name ?", "Guest"); // for ex kisi game me name ask krte hai.
+        // console.log(name);
+
+        // Confirm --> at the time of deleting file extra chance. we can say.
+        // it returns boolean value.
+
+        let deletePost = confirm("Do you really want to delete it?");
+        //console.log(deletePost);
+        if (deletePost) {
+            console.log("Your post has been deleted succesfully");
+        } else {
+            console.log("Your post has not been deleted ");
+        }
+    </script>
+</body>
+
+</html>

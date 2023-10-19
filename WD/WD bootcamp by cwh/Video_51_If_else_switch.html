@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else Statement and switch Statement</title>
+</head>
+
+<body>
+    <h3>This is scope and conditionals in JS</h3>
+
+    <script>
+        /* SCOPE...
+                                                var str1 = "Vikash";
+                                                var str1 = "Yadav";
+                                                console.log(str1); // so yaha overwrite ho gya 
+                                                // var ek global declaration hota hai
+                                                let a = "Vikku"; // let can a global as well as block declaration.
+                                                // let a = "Vy"; // here comes error. because a is already defined.
+                                                {
+                                      iske andar let use ho rha hai to uska yhi scope hoga. means kewal block.}*/
+
+        // const a = "This is constant. it can't be changed";
+        // a = "hello"; // if we try to change then comes error.
+
+        // Conditional Statements.
+        // uses--> Jaise ki kisi form me email ke jgh pr ki name dal de to error aana chahiye.
+
+        /*let age = 34;
+        if (age > 18) {
+            console.log("You can Drive a car")
+        } else if (age == 18) {
+            console.log("You need to wait for some time to crossing age. ")
+        } else {
+            console.log("You can not Drive.")
+        }*/
+
+        // Switch case is nothing but it is also like if-else ladder.
+
+        const days = 7;
+        switch (days) {
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+                break;
+            case 7:
+                console.log("Sunday");
+                break;
+
+            default:
+                console.log("Invalid day's name.")
+                break;
+        }
+    </script>
+</body>
+
+</html>

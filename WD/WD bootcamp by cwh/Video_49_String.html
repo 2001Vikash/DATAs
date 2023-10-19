@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p id="content"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim asperiores dolorem magnam dicta officiis! Quibusdam autem neque voluptatum eos nostrum obcaecati dicta!</p>
+    </div>
+
+    <script>
+        var string = "Vikash"; // we can also use single camma. 
+        var str = " is a good boy."
+        var temp = `${string} is from "India". and 'He' ${str}`; // `` --> backticks.
+        console.log(string + str);
+        console.log(temp);
+        var len = string.length;
+        console.log(`The length of the String is ${len}`);
+
+        console.log("Hello\nVikku bhai kya hal chal\t hmm \b haa."); // \n ,\t ,\b is scape sequesnce character.
+
+        // String defines using string constructer.
+
+        var string = new String("This");
+        console.log(string);
+        document.getElementById('content').innerHTML = '<h3>This is using of JS as dynamically in html </h3>';
+    </script>
+</body>
+
+</html>

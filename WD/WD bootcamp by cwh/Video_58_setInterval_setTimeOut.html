@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval and SetTimeOut</title>
+</head>
+
+<body>
+    <h1>SetInterval and SetTimeOut</h1>
+    <h2>Time is now</h2>
+    <span id="tt"></span>
+    <script>
+        // setTimeout --> Allows us to run the function once after the interval of time.
+        // setInterval --> Allows us to run the function repeatedly after the interval of time.
+
+        function greet(name, byText) {
+            console.log("Hello Good Morning " + name + " " + byText);
+        }
+
+        // setTimeout(greet, 5000, "Vikash", "Please take care of this!.");
+        //yaha kewal function ka name dena hai n ki function ko call krna hai.
+        // 5000ms=5second. // setInterval bhi use kr sakte hai
+
+        //timeOut= setTimeout(greet, 5000, "Vikash", "Please take care of this!.");
+        // clearTimeout(timeOut); // means ya 5 sec ke baad clear kr dega us function ko.
+
+        // setInterval(greet, 5000, "Vikash", "Please take care of this!.");// har 5 sec me print hoga
+        // we can also use clearInterval() for stop it.
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('tt').innerHTML = time;
+        }
+
+        // setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>
